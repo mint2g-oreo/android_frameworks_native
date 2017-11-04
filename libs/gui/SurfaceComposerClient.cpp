@@ -1015,7 +1015,8 @@ status_t ScreenshotClient::update(const sp<IBinder>& display,
     int ret = -1;
     mHeap = 0;
     ret = s->captureScreenLegacy(display, &mHeap, &mBuffer.width, &mBuffer.height, sourceCrop,
-            reqWidth, reqHeight, minLayerZ, maxLayerZ, useIdentityTransform,
+            reqWidth, reqHeight, static_cast <uint32_t> (minLayerZ),
+            static_cast <uint32_t> (maxLayerZ), useIdentityTransform,
             static_cast<ISurfaceComposer::Rotation>(rotation));
     if (ret == NO_ERROR) {
         mBuffer.format = PIXEL_FORMAT_RGBA_8888;

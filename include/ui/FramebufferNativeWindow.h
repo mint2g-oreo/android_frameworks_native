@@ -26,6 +26,9 @@
 
 #include <EGL/egl.h>
 
+#include <hardware/fb.h>
+#include <hardware/gralloc.h>
+
 #include <utils/threads.h>
 #include <utils/String8.h>
 

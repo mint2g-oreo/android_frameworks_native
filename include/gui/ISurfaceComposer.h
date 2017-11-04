@@ -26,6 +26,7 @@
 #include <utils/Vector.h>
 
 #include <binder/IInterface.h>
+#include <binder/MemoryHeapBase.h>
 
 #include <ui/FrameStats.h>
 #include <ui/PixelFormat.h>
